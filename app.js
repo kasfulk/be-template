@@ -1,7 +1,9 @@
 import express from 'express';
 import cors from 'cors';
-import appRoute from './src/routes/routes-bot-wa.js';
+import appRoute from './src/routes/routes-index.js';
+import dotenv from 'dotenv';
 
+dotenv.config({ path: '.env' });
 const app = express();
 
 app.use(cors());

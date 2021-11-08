@@ -15,11 +15,11 @@
         "express": "^4.17.1",
         "express-validator": "^6.10.1",
         "module-alias": "^2.2.2",
-        "mysql": "^2.18.1",
+        "mysql2": "^2.3.3-rc.0",
         "node-fetch": "^2.6.1"
     },
     "_moduleAliases": {
-        "@src" : "src"
+        "@src": "src"
     },
     "devDependencies": {
         "chai": "^3.5.0",
