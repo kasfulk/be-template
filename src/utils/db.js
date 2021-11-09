@@ -36,6 +36,10 @@ const checkTable = async (table, data) => {
     }
 }
 
+// Options:
+// Logical Options: AND, OR
+// Where: auto dinamically with object as field and value as search value
+//
 export const dbUpdate = async (table, data, options) => {
     const { setData, preparedList } = await checkTable(table, data);
     const {logic, wheres} = options;
@@ -60,6 +64,9 @@ export const dbUpdate = async (table, data, options) => {
     return result;
 };
 
+// Options:
+// keyField: Primary ID of table
+//
 export const dbInsert = async (table, data, options) => {
     const { fieldList, preparedList } = await checkTable(table, data);
     const  { keyField } = options;
